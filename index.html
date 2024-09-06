@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+    <!-- <script type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+        emailjs.init({
+          publicKey: "FeB50ICxVafGF6w_x",
+        });
+    })();
+  </script>
+  <script src="script.js"></script> -->
+  <body>
+    <!-- NAVBAR -->
+    <nav id="desktop-nav">
+      <div class="logo">Abby Nkuna</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Abby Nkuna</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <!-- END OF NAVBAR -->
+    
+    <!-- PROFILE -->
+    <section id="profile">
+        <div class="section__pic-container">
+          <img src="./assets/Abby picture.jpeg" alt="Abby Nkuna profile picture"style="border-radius:8rem;" />
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Abby Nkuna</h1>
+          <p class="section__text__p2">Backend Developer</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./assets/AbbyNkunaResume.pdf')"
+            >
+              Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+              Contact Info
+            </button>
+          </div>
+          <div id="socials-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+              onclick="window.open('https://linkedin.com', '_blank')"
+  
+            />
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+              onclick="window.open('https://github.com/AbbyNkuna', '_blank')"
+            />
+          </div>
+        </div>
+    </section>
+    <!-- END OF PROFILE -->
+
+    <!-- ABOUT -->
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section__pic-container">
+            <img
+              src="./assets/Abby pic2.jpeg"style="border-radius:8rem;"
+              alt="Profile picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img
+                  src="./assets/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Experience</h3>
+                <p>+6 months <br />Frontend Development <br />+2 years <br />Technical Support </p>
+              </div>
+              <div class="details-container">
+                <img
+                  src="./assets/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>N. Diploma IT: Software development<br />Technical Support L4<br  /> System Support L5</p>
+              </div>
+            </div>
+            <div class="text-container">
+              <p>
+                I am a dedicated and motivated professional with
+                strategic planning skills, and ICT services. I bring a dynamic approach to all that I do,
+                 combining passion with hard work and ambition. My excellent interpersonal communication skills, 
+                 attention to detail, and ability to work well under pressure have driven my success in various roles. 
+                 I am a team player who thrives in collaborative environments and is motivated by setting and achieving goals.
+              </p>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#experience'"
+        />
+    </section>
+    <!-- END OF ABOUT -->
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Frontend Development</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                
+                
+              </div>
+            </div>
+            <div class="details-container">
+              <h2 class="experience-sub-title">Backend Development</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Java</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>C++</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Python</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Technical Support</h2>
+          <div class="article-container">
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Troubleshooting</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Networking</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Tech Support</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#projects'"
+        />
+    </section>
+    <!-- END OF EXPERIENCE -->
+
+    <!-- PROJECT'S -->
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/banner.png"
+                  alt="Project 1"
+                  class="project-img"
+                  style="height: 220px;" 
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">SheGuard App</h2>
+              
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://github.com/AbbyNkuna/sheguard', '_blank')"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn" 
+                  onclick="window.open('https://github.com/', '_blank')"
+                  
+                >
+                  Live Demo
+                </button>
+              </div>
+              <!--  -->
+  
+  
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/career app"
+                  alt="Project 2"
+                  class="project-img"
+                  style="height: 220px;" 
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Career Counselling App</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://github.com/', '_blank')"
+                >
+                  Github
+               </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://github.com/AbbyNkuna/CarrerConcellingApp/', '_blank')"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div> 
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/crime hotspot.png"
+                  alt="Project 3"
+                  class="project-img"
+                 style="height: 220px;" />
+              </div>
+              <h2 class="experience-sub-title project-title">Crime Hotspot App</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://github.com/AbbyNkuna/crimehotspot', '_blank')"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://github.com/', '_blank')"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        />
+    </section>
+    <!-- END OF PROJECT'S -->
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:examplemail@gmail.com">abdicatenkuna2@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a target="_blank" href="https://www.linkedin.com/in/abby-nkuna-a2081a145/">LinkedIn</a></p>
+          </div>
+        </div>
+    </section>
+    <!-- END OF CONTACT -->
+
+
+    <!--  -->
+    <form id="contact_form" name="contact_form" method="post">
+        <div class="mb-5 row">
+            <div class="col">
+                <label>Full Names</label>
+                <input type="text" required maxlength="50" class="form-control" id="name" name="name">
+            </div>
+        </div>
+        <div class="mb-5 row">
+            <div class="col">
+                <label for="email_addr">Email address</label>
+                <input type="email" required maxlength="50" class="form-control" id="email_addr" name="email"
+                    placeholder="name@example.com">
+            </div>
+        </div>
+        <div class="mb-5">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+        </div>
+        <button type="submit" onclick="sendMail()" btn btn-primary px-4 btn-lg>Post</button>
+    </form>
+    <!--  -->
+
+
+    <!-- FOOTER -->
+    <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2024 Abby Nkuna. All Rights Reserved.</p>
+    </footer>
+    <!-- END OF FOOTER -->
+
+    <!-- Include the EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- CHATBOT -->
+    <div id="chat-box-container" style="position: fixed; bottom: 20px; right: 20px; width: 300px; background-color: #fff; border: 1px solid #8B4513; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <div id="chat-header" style="background-color: #8B4513; color: #fff; padding: 10px; cursor: pointer;" onclick="toggleChatBox()">Chat with Abby</div>
+        <div id="chat-box" style="display: none; padding: 10px; max-height: 400px; overflow-y: auto;">
+          <div id="chat-messages" style="font-family: Arial, sans-serif; font-size: 14px; margin-bottom: 10px;"></div>
+          <input id="chat-input" type="text" placeholder="Type a message..." style="width: 80%; padding: 5px;" onkeydown="if(event.key === 'Enter') sendMessage()" />
+          <button onclick="sendMessage()" style="width: 18%; padding: 5px; background-color: #8B4513; color: #fff; border: none; cursor: pointer;">Send</button>
+        </div>
+    </div>
+      
+    <script>
+        function toggleChatBox() {
+          var chatBox = document.getElementById('chat-box');
+          chatBox.style.display = chatBox.style.display === 'none' ? 'block' : 'none';
+        }
+      
+        function sendMessage() {
+          var input = document.getElementById('chat-input');
+          var message = input.value.trim();
+          if (message) {
+            var chatMessages = document.getElementById('chat-messages');
+            var userMessage = document.createElement('div');
+            userMessage.textContent = 'You: ' + message;
+            chatMessages.appendChild(userMessage);
+            
+            // Clear input
+            input.value = '';
+      
+            // Simulate a response
+            var responseMessage = document.createElement('div');
+            responseMessage.textContent = 'Abby: Thanks for your message! I will get back to you soon or call: 0780761432 or Email: abdicatenkuna2@gmail.com.';
+            chatMessages.appendChild(responseMessage);
+          }
+        }
+    </script>
+    <!-- END OF CHATBOT  -->
+
+  </body>
+</html>
